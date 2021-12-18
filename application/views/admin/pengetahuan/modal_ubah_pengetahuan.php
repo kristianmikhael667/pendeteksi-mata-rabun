@@ -7,23 +7,23 @@
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-          <h5 class="modal-title" id="apasih">Ubah Pengetahuan</h5>
+          <h5 class="modal-title" id="apasih">Ubah Penyakit</h5>
         </div>
 
         <?= form_open_multipart('pengetahuan/ubah'); ?>
         <input type="hidden" name="id" value="<?= $P['id']; ?>">
         <div class="modal-body">
           <div class="form-group">
-            <label for="kerusakan">Pilih Kerusakan</label>
+            <label for="kerusakan">Pilih Penyakit</label>
             <select name="kerusakan" id="kerusakan" class="form-control">
-              <option value="<?= $P['kode_kerusakan']; ?>" selected><?= $P['kode_kerusakan']; ?> - <?= $P['nama_kerusakan']; ?></option>
+              <option value="<?= $P['id_penyakit']; ?>" selected><?= $P['kode_penyakit']; ?> - <?= $P['nama_penyakit']; ?></option>
               <?php foreach ($kerusakan as $k) : ?>
-                <option value="<?= $k['id_kerusakan']; ?>"><?= $k['kode_kerusakan']; ?>-<?= $k['nama_kerusakan']; ?></option>
+                <option value="<?= $k['id_penyakit']; ?>"><?= $k['kode_penyakit']; ?>-<?= $k['nama_penyakit']; ?></option>
               <?php endforeach; ?>
             </select>
             <label for="gejala">Pilih Gejala</label>
             <select name="gejala" id="gejala" class="form-control">
-              <option value="<?= $P['kode_gejala']; ?>"><?= $P['kode_gejala']; ?>-<?= $P['nama_gejala']; ?></option>
+              <option value="<?= $P['id_gejala']; ?>"><?= $P['kode_gejala']; ?>-<?= $P['nama_gejala']; ?></option>
               <?php foreach ($gejala as $g) : ?>
                 <option value="<?= $g['id_gejala']; ?>"><?= $g['kode_gejala']; ?> - <?= $g['nama_gejala']; ?></option>
               <?php endforeach; ?>

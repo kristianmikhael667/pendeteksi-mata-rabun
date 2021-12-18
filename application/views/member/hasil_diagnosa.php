@@ -27,18 +27,17 @@
                         <div class="row progress-circle mb-5">
                             <?php foreach ($diagnosa as $diag) : ?>
                                 <?php
-                                if ($diag['id_penyakit'] == 1) {
-                                    $diag['id_penyakit'] = 'Rusak Pada IC Power';
-                                } elseif ($diag['id_penyakit'] == 2) {
-                                    $diag['id_penyakit'] = 'Rusak Pada IC VGA';
-                                } elseif ($diag['id_penyakit'] == 3) {
-                                    $diag['id_penyakit'] = 'Rusak pada Inverter/gangguan pada fleksibel kabel';
-                                } elseif ($diag['id_penyakit'] == 4) {
-                                    $diag['id_penyakit'] = 'Rusak pada LCD';
-                                } elseif ($diag['id_penyakit'] == 5) {
-                                    $diag['id_penyakit'] = 'Rusak pada Keyboard';
+                                if ($diag['id_penyakit'] == 39) {
+                                    $diag['id_penyakit'] = 'Mata Myopia';
+                                } else if ($diag['id_penyakit'] == 40) {
+                                    $diag['id_penyakit'] = 'Mata Hipermetropi';
+                                } else if ($diag['id_penyakit'] == 41) {
+                                    $diag['id_penyakit'] = 'Mata Astigmatisma';
+                                } else if ($diag['id_penyakit'] == 42) {
+                                    $diag['id_penyakit'] = 'Mata Presbiopi';
+                                } else if ($diag['id_penyakit'] == 43) {
+                                    $diag['id_penyakit'] = 'Mata Katarak';
                                 }
-
                                 ?>
                                 <div class="col-lg-4 mb-4">
                                     <div class="bg-white rounded-lg shadow p-2">
@@ -64,20 +63,20 @@
 
 
                         <div class="row">
-                            <h4>Berdasarkan Gejala-Gejala yang telah dipilih,maka komputer anda mengalami:</h4>
+                            <h4>Berdasarkan Gejala-Gejala yang telah dipilih,maka Mata anda mengalami:</h4>
                             <br>
                             <?php foreach ($tertinggi as $tinggi) : ?>
                                 <?php
-                                if ($tinggi['id_penyakit'] == 1) {
-                                    $tinggi['id_penyakit'] = 'Rusak Pada IC Power';
-                                } elseif ($tinggi['id_penyakit'] == 2) {
-                                    $tinggi['id_penyakit'] = 'Rusak Pada IC VGA';
-                                } elseif ($tinggi['id_penyakit'] == 3) {
-                                    $tinggi['id_penyakit'] = 'Rusak pada Inverter/gangguan pada fleksibel kabel';
-                                } elseif ($tinggi['id_penyakit'] == 4) {
-                                    $tinggi['id_penyakit'] = 'Rusak pada LCD';
-                                } elseif ($tinggi['id_penyakit'] == 5) {
-                                    $tinggi['id_penyakit'] = 'Rusak pada Keyboard';
+                                if ($tinggi['id_penyakit'] == 39) {
+                                    $tinggi['id_penyakit'] = 'Mata Myopia';
+                                } else if ($tinggi['id_penyakit'] == 40) {
+                                    $tinggi['id_penyakit'] = 'Mata Hipermetropi';
+                                } else if ($tinggi['id_penyakit'] == 41) {
+                                    $tinggi['id_penyakit'] = 'Mata Astigmatisma';
+                                } else if ($tinggi['id_penyakit'] == 42) {
+                                    $tinggi['id_penyakit'] = 'Mata Presbiopi';
+                                } else if ($tinggi['id_penyakit'] == 43) {
+                                    $tinggi['id_penyakit'] = 'Mata Katarak';
                                 }
 
                                 ?>
@@ -94,7 +93,7 @@
                             <div class="row d-flex center">
                                 <div class="col-md-8 d-flex ftco-animate">
                                     <div class="blog-entry justify-content-end">
-                                        <a href="#" class="block-20" style="background-image: url('<?= base_url('assets/images/kerusakan/'); ?><?= $det['gambar']; ?>');">
+                                        <a href="#" class="block-20" style="background-image: url('<?= base_url('assets_admin/images/kerusakan/'); ?><?= $det['gambar']; ?>');">
                                         </a>
                                         <div class="text mt-3 float-right d-block">
                                             <h4>Solusi</h4>

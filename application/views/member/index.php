@@ -23,19 +23,19 @@
                                 <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                                 <!--RD Navbar Brand-->
                                 <div class="rd-navbar-brand">
-                                    <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="assets/images/logo-default-294x44.png" alt="" width="147" height="22" /><img class="brand-logo-light" src="assets/images/logo-inverse-294x44.png" alt="" width="147" height="22" /></a>
+                                    <!--Brand--><a class="brand" href="<?= base_url('/member') ?>"><img class="brand-logo-dark" src="assets/images/logo-default-294x44.png" alt="" width="147" height="22" /><img class="brand-logo-light" src="assets/images/logo-inverse-294x44.png" alt="" width="147" height="22" /></a>
                                 </div>
                             </div>
                             <div class="rd-navbar-main-element">
                                 <div class="rd-navbar-nav-wrap">
                                     <ul class="rd-navbar-nav">
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Dashboard</a>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="<?= base_url('/member') ?>">Dashboard</a>
                                         </li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html"><?= $user['nama_user']; ?></a>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="#"><?= $user['nama_user']; ?></a>
                                             <ul class="rd-menu rd-navbar-dropdown">
-                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="doctors.html">Edit Profile</a>
+                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Edit Profile</a>
                                                 </li>
-                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="logout.php">Logout</a>
+                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="<?= base_url('/auth/logout') ?>">Logout</a>
                                                 </li>
                                             </ul>
                                         </li>

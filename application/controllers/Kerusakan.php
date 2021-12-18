@@ -30,7 +30,7 @@ class Kerusakan extends CI_Controller
     $this->load->view('admin/kerusakan/modal_ubah_kerusakan');
   }
 
-  // Tambah Kerusakan
+  // Tambah Penyakit
   public function tambah()
   {
     $data['tbl_penyakit'] = $this->db->get('tbl_penyakit')->result_array();

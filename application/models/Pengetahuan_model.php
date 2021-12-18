@@ -6,7 +6,7 @@ class Pengetahuan_model extends CI_model
   public function getAllPengetahuan()
   {
     // menampilkan seluruh data gejala yang ada di tabel gejala.
-    $queryRule = "SELECT `tbl_pengetahuan`.`id`,`tbl_penyakit`.`kode_penyakit`,`tbl_penyakit`.`nama_penyakit`,`tbl_gejala`.`kode_gejala`,`tbl_gejala`.`nama_gejala`,`tbl_pengetahuan`.`probabilitas`
+    $queryRule = "SELECT `tbl_pengetahuan`.`id`,`tbl_penyakit`.`id_penyakit`,`tbl_penyakit`.`kode_penyakit`,`tbl_penyakit`.`nama_penyakit`,`tbl_gejala`.`id_gejala`,`tbl_gejala`.`kode_gejala`,`tbl_gejala`.`nama_gejala`,`tbl_pengetahuan`.`probabilitas`
     FROM `tbl_penyakit` JOIN `tbl_pengetahuan` 
     ON `tbl_penyakit`.`id_penyakit` = `tbl_pengetahuan`.`id_penyakit`
     JOIN `tbl_gejala` 
@@ -36,7 +36,7 @@ class Pengetahuan_model extends CI_model
   public function tambahPengetahuan()
   {
     $data = [
-      "id_kerusakan" => $this->input->post('kerusakan', true,),
+      "id_penyakit" => $this->input->post('kerusakan', true,),
       "id_gejala" => $this->input->post('gejala'),
       "probabilitas" => $this->input->post('probabilitas')
     ];
@@ -48,7 +48,7 @@ class Pengetahuan_model extends CI_model
   {
     $id = $this->input->post('id');
     $data = [
-      "id_kerusakan" => $this->input->post('kerusakan'),
+      "id_penyakit" => $this->input->post('kerusakan'),
       "id_gejala" => $this->input->post('gejala'),
       "probabilitas" => $this->input->post('probabilitas')
     ];

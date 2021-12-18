@@ -47,7 +47,7 @@ class Diagnosa_model extends CI_model
   {
     $this->db->select('*');
     $this->db->from('tmp_final');
-    $this->db->where('id_penyakit', 1);
+    $this->db->where('id_penyakit', 39);
     $prob = $this->db->get()->result();
     //inisialisasi untuk total probabilitas
     $jumlah = 1;
@@ -59,8 +59,9 @@ class Diagnosa_model extends CI_model
     // (Prob kerusakan di tmp_final * prob di tabel kerusakan)
     $this->db->select('*');
     $this->db->from('tbl_penyakit');
-    $this->db->where('id_penyakit', 1);
+    $this->db->where('id_penyakit', 39);
     $data = $this->db->get()->result();
+
     foreach ($data as $rowku) {
       $hasilBayes = $jumlah * $rowku->probabilitas;
     }
@@ -73,7 +74,7 @@ class Diagnosa_model extends CI_model
   {
     $this->db->select('*');
     $this->db->from('tmp_final');
-    $this->db->where('id_penyakit', 2);
+    $this->db->where('id_penyakit', 40);
     $prob = $this->db->get()->result();
     //inisialisasi untuk total probabilitas
     $jumlah = 1;
@@ -84,7 +85,7 @@ class Diagnosa_model extends CI_model
     // (Prob kerusakan di tmp_final * prob di tabel kerusakan)
     $this->db->select('*');
     $this->db->from('tbl_penyakit');
-    $this->db->where('id_penyakit', 2);
+    $this->db->where('id_penyakit', 40);
     $data = $this->db->get()->result();
     foreach ($data as $rowku) {
       $hasilBayes = $jumlah * $rowku->probabilitas;
@@ -98,7 +99,7 @@ class Diagnosa_model extends CI_model
   {
     $this->db->select('*');
     $this->db->from('tmp_final');
-    $this->db->where('id_penyakit', 3);
+    $this->db->where('id_penyakit', 41);
     $prob = $this->db->get()->result();
     //inisialisasi untuk total probabilitas
     $jumlah = 1;
@@ -109,7 +110,7 @@ class Diagnosa_model extends CI_model
     // (Prob kerusakan di tmp_final * prob di tabel kerusakan)
     $this->db->select('*');
     $this->db->from('tbl_penyakit');
-    $this->db->where('id_penyakit', 3);
+    $this->db->where('id_penyakit', 41);
     $data = $this->db->get()->result();
     foreach ($data as $rowku) {
       $hasilBayes = $jumlah * $rowku->probabilitas;
@@ -123,7 +124,7 @@ class Diagnosa_model extends CI_model
   {
     $this->db->select('*');
     $this->db->from('tmp_final');
-    $this->db->where('id_penyakit', 4);
+    $this->db->where('id_penyakit', 42);
     $prob = $this->db->get()->result();
     //inisialisasi untuk total probabilitas
     $jumlah = 1;
@@ -134,7 +135,7 @@ class Diagnosa_model extends CI_model
     // (Prob kerusakan di tmp_final * prob di tabel kerusakan)
     $this->db->select('*');
     $this->db->from('tbl_penyakit');
-    $this->db->where('id_penyakit', 4);
+    $this->db->where('id_penyakit', 42);
     $data = $this->db->get()->result();
     foreach ($data as $rowku) {
       $hasilBayes = $jumlah * $rowku->probabilitas;
@@ -148,7 +149,7 @@ class Diagnosa_model extends CI_model
   {
     $this->db->select('*');
     $this->db->from('tmp_final');
-    $this->db->where('id_penyakit', 5);
+    $this->db->where('id_penyakit', 43);
     $prob = $this->db->get()->result();
     //inisialisasi untuk total probabilitas
     $jumlah = 1;
@@ -159,7 +160,7 @@ class Diagnosa_model extends CI_model
     // (Prob kerusakan di tmp_final * prob di tabel kerusakan)
     $this->db->select('*');
     $this->db->from('tbl_penyakit');
-    $this->db->where('id_penyakit', 5);
+    $this->db->where('id_penyakit', 43);
     $data = $this->db->get()->result();
     foreach ($data as $rowku) {
       $hasilBayes = $jumlah * $rowku->probabilitas;
@@ -173,31 +174,31 @@ class Diagnosa_model extends CI_model
   public function hasilProbK1($K1)
   {
     $hasilK1 = ['hasil_probabilitas' => $K1];
-    $this->db->where('id_penyakit', 1);
+    $this->db->where('id_penyakit', 39);
     $this->db->update('tmp_final', $hasilK1);
   }
   public function hasilProbK2($K2)
   {
     $hasilK2 = ['hasil_probabilitas' => $K2];
-    $this->db->where('id_penyakit', 2);
+    $this->db->where('id_penyakit', 40);
     $this->db->update('tmp_final', $hasilK2);
   }
   public function hasilProbK3($K3)
   {
     $hasilK3 = ['hasil_probabilitas' => $K3];
-    $this->db->where('id_penyakit', 3);
+    $this->db->where('id_penyakit', 41);
     $this->db->update('tmp_final', $hasilK3);
   }
   public function hasilProbK4($K4)
   {
     $hasilK4 = ['hasil_probabilitas' => $K4];
-    $this->db->where('id_penyakit', 4);
+    $this->db->where('id_penyakit', 42);
     $this->db->update('tmp_final', $hasilK4);
   }
   public function hasilProbK5($K5)
   {
     $hasilK5 = ['hasil_probabilitas' => $K5];
-    $this->db->where('id_penyakit', 5);
+    $this->db->where('id_penyakit', 43);
     $this->db->update('tmp_final', $hasilK5);
   }
   // End Update Hasil Probabilitas pada tmp_final

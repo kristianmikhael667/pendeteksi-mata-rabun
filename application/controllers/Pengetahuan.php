@@ -44,7 +44,7 @@ class Pengetahuan extends CI_Controller
     redirect('pengetahuan');
   }
 
-  // Ubah Pengetahuan/Aturan
+  // Ubah Penyakit/Aturan
   public function ubah()
   {
     $this->MP->ubahPengetahuan();

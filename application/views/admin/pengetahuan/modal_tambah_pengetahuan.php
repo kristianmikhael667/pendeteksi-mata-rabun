@@ -6,7 +6,7 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-        <h5 class="modal-title" id="apasih">Tambah Kerusakan</h5>
+        <h5 class="modal-title" id="apasih">Tambah Penyakit</h5>
       </div>
       <div class="modal-body">
         <form action="<?= base_url('pengetahuan/tambah'); ?>" method="post">
@@ -15,9 +15,9 @@
           </div>
           <div class="form-group">
             <select name="kerusakan" id="kerusakan" class="form-control">
-              <option value="">Pilih Kerusakan</option>
+              <option value="">Pilih Penyakit</option>
               <?php foreach ($kerusakan as $K) : ?>
-                <option value="<?= $K['id_kerusakan']; ?>"><?= $K['kode_kerusakan']; ?> - <?= $K['nama_kerusakan']; ?></option>
+                <option value="<?= $K['id_penyakit']; ?>"><?= $K['kode_penyakit']; ?> - <?= $K['nama_penyakit']; ?></option>
               <?php endforeach; ?>
             </select>
           </div>
