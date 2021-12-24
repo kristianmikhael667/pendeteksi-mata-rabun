@@ -29,12 +29,12 @@
                             <div class="rd-navbar-main-element">
                                 <div class="rd-navbar-nav-wrap">
                                     <ul class="rd-navbar-nav">
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="<?= base_url('/member') ?>">Dashboard</a>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="<?= base_url('/member') ?>">Beranda</a>
                                         </li>
                                         <li class="rd-nav-item"><a class="rd-nav-link" href="#"><?= $user['nama_user']; ?></a>
                                             <ul class="rd-menu rd-navbar-dropdown">
-                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Edit Profile</a>
-                                                </li>
+                                                <!-- <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Edit Profile</a>
+                                                </li> -->
                                                 <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="<?= base_url('/auth/logout') ?>">Logout</a>
                                                 </li>
                                             </ul>
@@ -53,7 +53,7 @@
             <div class="container">
                 <div class="row flex-column-reverse">
                     <div class="col-12">
-                        <div class="breadcrumbs-custom-title">Welcome, <strong><?= $user['nama_user']; ?></strong> in Pendeteksi Mata Rabun</div>
+                        <div class="breadcrumbs-custom-title">Selamat Datang, <strong><?= $user['nama_user']; ?></strong> in Pendeteksi Mata Rabun</div>
 
                     </div>
                 </div>
@@ -66,7 +66,7 @@
                         <div class="single-post-caption">
                             <div class="single-post-caption__user"><img src="assets/images/user-profile-140x140.png" alt="" width="140" height="140" /><?= $user['nama_user']; ?></span>
                             </div>
-                            <h2 class="text-center">Application Pendeteksi Mata</h2>
+                            <h2 class="text-center">Aplikasi Pendeteksi Mata</h2>
 
                         </div>
                     </div>
@@ -81,10 +81,10 @@
                             <div class="row row-10">
                                 <div class="col-12">
                                     <div class="article-comment">
-                                        <h4 class="mb-3">Please do a diagnosis of eye disease</h4>
+                                        <h4 class="mb-3">Silahkan lakukan diagnosis penyakit mata</h4>
                                         <div class="form-button text-lg-left">
                                             <form action="<?= base_url('member/diagnosa') ?>" method="post">
-                                                <button class="button button button-primary" type="submit"><i class="fas fa-stethoscope"></i> Click Here For Diagnosis</button>
+                                                <button class="button button button-primary" type="submit"><i class="fas fa-stethoscope"></i> Klik Disini Untuk Diagnosa</button>
                                             </form>
                                         </div>
                                     </div>

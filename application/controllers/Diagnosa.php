@@ -53,7 +53,6 @@ class Diagnosa extends CI_Controller
     echo 'Nilai Perhitungan Bayes K5 =' . $K5 . '<br>';
 
 
-
     $this->DM->hasilProbK1($K1);
     $this->DM->hasilProbK2($K2);
     $this->DM->hasilProbK3($K3);

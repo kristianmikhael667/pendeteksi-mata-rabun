@@ -29,12 +29,12 @@
                             <div class="rd-navbar-main-element">
                                 <div class="rd-navbar-nav-wrap">
                                     <ul class="rd-navbar-nav">
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Dashboard</a>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="<?= base_url('member') ?>">Beranda</a>
                                         </li>
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html"><?= $user['nama_user']; ?></a>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="#"><?= $user['nama_user']; ?></a>
                                             <ul class="rd-menu rd-navbar-dropdown">
-                                                <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="doctors.html">Edit Profile</a>
-                                                </li>
+                                                <!-- <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="doctors.html">Edit Profile</a>
+                                                </li> -->
                                                 <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="logout.php">Logout</a>
                                                 </li>
                                             </ul>
@@ -53,7 +53,7 @@
             <div class="container">
                 <div class="row flex-column-reverse">
                     <div class="col-12">
-                        <div class="breadcrumbs-custom-title">Please select the symptoms you feel</div>
+                        <div class="breadcrumbs-custom-title">Silakan pilih gejala yang Anda rasakan</div>
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-10">
 
-                        <h4>Select Symptom</h4>
+                        <h4>Pilih Gejala</h4>
                         <!--Bootstrap tabs-->
                         <div class="tabs-custom tabs-horizontal tabs-corporate" id="tabs-1">
                             <!--Nav tabs-->
@@ -76,7 +76,7 @@
                                 $no = 1;
                                 $sn = 1;
                                 foreach ($gejala as $gejal) : ?>
-                                    <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-<?= $no++ ?>" data-toggle="tab">Quest <?= $sn++ ?></a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-<?= $no++ ?>" data-toggle="tab">Pertanyaan <?= $sn++ ?></a></li>
                                 <?php endforeach ?>
 
                             </ul>
@@ -90,7 +90,8 @@
                                     foreach ($gejala as $g) : ?>
                                         <div class="tab-pane fade" id="tabs-1-<?= $no++ ?>">
                                             <h4><?= $nu++ ?>.) <?= $g["kode_gejala"] ?> ~ Apakah <?= $g["nama_gejala"] ?> ?</h4>
-                                            <input type="checkbox" id="<?= $g['id_gejala']; ?>" name="id_gejala[]" value="<?= $g['id_gejala']; ?>"> Yes
+                                            <input type="checkbox" id="<?= $g['id_gejala']; ?>" name="id_gejala[]" value="<?= $g['id_gejala']; ?>"> Ya
+                                            <input type="checkbox" id="<?= $g['id_gejala']; ?>" name="id_gejala[]" value=""> Tidak
 
                                         </div>
 
