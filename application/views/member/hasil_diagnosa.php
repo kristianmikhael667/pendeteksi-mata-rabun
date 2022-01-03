@@ -102,7 +102,48 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="row d-flex center">
+                                <div class="col-md-12 d-flex ftco-animate">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h4>Hasil Tingkat Kepuasan Anda</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <input class="form-control" id="rangeInput" type="range" min="0" max="100" oninput="amount.value=rangeInput.value" />
+                                            <input class="form-control" id="amount" type="number" value="0" min="0" max="100" oninput="rangeInput.value=amount.value" />
+                                        </div>
+                                        <div class="card-footer">
+                                            <button type="button" onclick="storefeed()" class="btn btn-primary">Send Feedback </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         <?php endforeach; ?>
+                        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+                        <script>
+                            storefeed = () => {
+                                let fd = new FormData();
+                                let nama = $("#amount").val();
+
+                                fd.append('amount', nama);
+                                console.log(nama);
+                                const baseUrl = '<?= base_url(); ?>';
+                                $.ajax({
+                                    type: "POST",
+                                    url: `${baseUrl}/diagnosa/hasilkepuasan`,
+                                    cache: false,
+                                    contentType: false,
+                                    processData: false,
+                                    data: fd,
+                                    success: function(data) {
+
+                                        swal("Thanks", "Success Send FeedBack From Users", "success");
+                                        // location.href = `${baseUrl}/admin/users/list`;
+                                    }
+                                })
+                            }
+                        </script>
                     </div>
                 </div>
             </div>

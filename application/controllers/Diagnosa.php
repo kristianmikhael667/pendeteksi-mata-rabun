@@ -63,4 +63,10 @@ class Diagnosa extends CI_Controller
     $this->DM->insertHasil();
     redirect('member/hasil_diagnosa');
   }
+
+  public function hasilkepuasan()
+  {
+    $amount = $this->input->post('amount');
+    $this->DM->insertKepuasanUser($amount);
+  }
 }

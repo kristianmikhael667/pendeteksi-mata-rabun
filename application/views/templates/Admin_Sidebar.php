@@ -32,6 +32,7 @@
               <li><a href="<?= base_url('kerusakan'); ?>"><i class="fa fa-fw fa-medkit"></i> Penyakit</a></li>
               <li><a href="<?= base_url('pengetahuan'); ?>"><i class="fa fa-fw fa-table"></i> Basis Pengetahuan</a></li>
               <li><a href="<?= base_url('laporan'); ?>"><i class="fa fa-fw fa-bar-chart-o"></i> Laporan</a></li>
+              <li><a href="<?= base_url('feed'); ?>"><i class="fa fa-rss"></i> Feed Back</a></li>
               <li onclick="return confirm('Yakin Keluar?');"><a href="<?= base_url('auth/logout'); ?>"><i class="fa fa-fw fa-sign-out" aria-hidden="true"></i> Logout </a></li>
             </ul>
           </div>

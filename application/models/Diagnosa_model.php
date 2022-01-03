@@ -240,6 +240,25 @@ class Diagnosa_model extends CI_model
   // End Menampilkan Hasil diagnosa 
 
   // Memasukkan hasil diagnosa ke tbl_hasil_diagnosa
+  public function insertKepuasanUser($amount)
+  {
+    $this->db->select('*');
+    $this->db->from('tbl_user');
+    $this->db->where('username', $this->session->userdata('username'));
+    $data = $this->db->get()->result();
+    foreach ($data as $row) {
+      $nama = $row->nama_user;
+      $id = $row->id_user;
+    }
+    $data = [
+      'id_user' => $id,
+      'nama_user' => $nama,
+      'hasil_kepuasan' => $amount,
+      'waktu' => time()
+    ];
+    return $this->db->insert('tbl_kepuasan', $data);
+  }
+
   public function insertHasil()
   {
     $this->db->select('*');
