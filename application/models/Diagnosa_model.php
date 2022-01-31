@@ -53,7 +53,7 @@ class Diagnosa_model extends CI_model
     $jumlah = 1;
     foreach ($prob as $pr) {
       $jumlah = $jumlah * $pr->probabilitas;
-      var_dump('Jumlah 1 : ', $jumlah);
+      // var_dump('Jumlah 1 : ', $jumlah);
     }
     // Perhitungan hasil bayes kerusakan 1
     // (Prob kerusakan di tmp_final * prob di tabel kerusakan)
@@ -64,7 +64,7 @@ class Diagnosa_model extends CI_model
 
     foreach ($data as $rowku) {
       $hasilBayes = $jumlah * $rowku->probabilitas;
-      var_dump('Hasil Bayes : ', $hasilBayes);
+      // var_dump('Hasil Bayes : ', $hasilBayes);
     }
     return $hasilBayes;
   }
@@ -81,7 +81,7 @@ class Diagnosa_model extends CI_model
     $jumlah = 1;
     foreach ($prob as $pr) {
       $jumlah = $jumlah * $pr->probabilitas;
-      var_dump('Jumlah 2 : ', $jumlah);
+      // var_dump('Jumlah 2 : ', $jumlah);
     }
     // Perhitungan hasil bayes kerusakan 2
     // (Prob kerusakan di tmp_final * prob di tabel kerusakan)
@@ -91,7 +91,7 @@ class Diagnosa_model extends CI_model
     $data = $this->db->get()->result();
     foreach ($data as $rowku) {
       $hasilBayes = $jumlah * $rowku->probabilitas;
-      var_dump('Hasil Bayes 2 : ', $hasilBayes);
+      // var_dump('Hasil Bayes 2 : ', $hasilBayes);
     }
     return $hasilBayes;
   }
@@ -108,7 +108,7 @@ class Diagnosa_model extends CI_model
     $jumlah = 1;
     foreach ($prob as $pr) {
       $jumlah = $jumlah * $pr->probabilitas;
-      var_dump('Jumlah 3 : ', $jumlah);
+      // var_dump('Jumlah 3 : ', $jumlah);
     }
     // Perhitungan hasil bayes kerusakan 3
     // (Prob kerusakan di tmp_final * prob di tabel kerusakan)
@@ -118,7 +118,7 @@ class Diagnosa_model extends CI_model
     $data = $this->db->get()->result();
     foreach ($data as $rowku) {
       $hasilBayes = $jumlah * $rowku->probabilitas;
-      var_dump('Hasil Bayes 3 : ', $hasilBayes);
+      // var_dump('Hasil Bayes 3 : ', $hasilBayes);
     }
     return $hasilBayes;
   }
@@ -135,7 +135,7 @@ class Diagnosa_model extends CI_model
     $jumlah = 1;
     foreach ($prob as $pr) {
       $jumlah = $jumlah * $pr->probabilitas;
-      var_dump('Jumlah 4 : ', $jumlah);
+      // var_dump('Jumlah 4 : ', $jumlah);
     }
     // Perhitungan hasil bayes kerusakan 4
     // (Prob kerusakan di tmp_final * prob di tabel kerusakan)
@@ -145,7 +145,7 @@ class Diagnosa_model extends CI_model
     $data = $this->db->get()->result();
     foreach ($data as $rowku) {
       $hasilBayes = $jumlah * $rowku->probabilitas;
-      var_dump('Hasil Bayes 4 : ', $hasilBayes);
+      // var_dump('Hasil Bayes 4 : ', $hasilBayes);
     }
     return $hasilBayes;
   }
@@ -162,7 +162,7 @@ class Diagnosa_model extends CI_model
     $jumlah = 1;
     foreach ($prob as $pr) {
       $jumlah = $jumlah * $pr->probabilitas;
-      var_dump('Jumlah 5 : ', $jumlah);
+      // var_dump('Jumlah 5 : ', $jumlah);
     }
     // Perhitungan hasil bayes kerusakan 5
     // (Prob kerusakan di tmp_final * prob di tabel kerusakan)
@@ -172,7 +172,7 @@ class Diagnosa_model extends CI_model
     $data = $this->db->get()->result();
     foreach ($data as $rowku) {
       $hasilBayes = $jumlah * $rowku->probabilitas;
-      var_dump('Hasil Bayes 5 : ', $hasilBayes);
+      // var_dump('Hasil Bayes 5 : ', $hasilBayes);
     }
     return $hasilBayes;
   }

@@ -214,7 +214,7 @@
         <!--CTA Takedown-->
 
         <!--Team Slider-->
-        <!-- <section class="section section-lg">
+        <section class="section section-lg">
             <div class="container text-center text-sm-left">
                 <div class="pre-title wow fadeInLeft">Our Doctors</div>
                 <h2 class="wow fadeInLeft" data-wow-dalay=".2s">We have the best <span class="text-primary">specialists</span><br class="d-none d-lg-block">in the area</h2>
@@ -223,14 +223,14 @@
                         <div class="team-member-profile__media"><img src="assets/images/team-1-370x460.jpg" alt="" width="370" height="460" />
                         </div>
                         <div class="team-member-profile__caption">
-                            <h5><a href="single-doctor.html">Dr. Mike Rolson</a></h5><span>Pediatrician</span>
+                            <h5><a href="single-doctor.html">Dr. Rais A Raqib, Sp.M</a></h5><span>Pediatrician</span>
                         </div>
                     </div>
                     <div class="team-member-profile">
                         <div class="team-member-profile__media"><img src="assets/images/team-2-370x460.jpg" alt="" width="370" height="460" />
                         </div>
                         <div class="team-member-profile__caption">
-                            <h5><a href="single-doctor.html">Dr. Virginia Howard</a></h5><span>Dentist</span>
+                            <h5><a href="single-doctor.html">Dr. Faika Novadianas Sp.M</a></h5><span>Dentist</span>
                         </div>
                     </div>
                     <div class="team-member-profile">
@@ -277,7 +277,7 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
         <!--Counters-->
         <section class="section bg-image-3 section-lg">
             <div class="container">

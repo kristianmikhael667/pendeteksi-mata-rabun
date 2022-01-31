@@ -29,7 +29,8 @@
             <ul class="nav side-menu">
               <li><a href="<?= base_url('admin'); ?>"><i class="fa fa-fw fa-home"></i> Dashboard</a></li>
               <li><a href="<?= base_url('gejala'); ?>"><i class="fa fa-fw fa-edit"></i> Gejala</a></li>
-              <li><a href="<?= base_url('kerusakan'); ?>"><i class="fa fa-fw fa-medkit"></i> Penyakit</a></li>
+              <li><a href="<?= base_url('nilaicf'); ?>"><i class="fa fa-fw fa-heart"></i> Nilai Certainty Factor</a></li>
+              <li><a href="<?= base_url('kerusakan'); ?>"><i class="fa fa-fw fa-medkit"></i> Penyakit </a></li>
               <li><a href="<?= base_url('pengetahuan'); ?>"><i class="fa fa-fw fa-table"></i> Basis Pengetahuan</a></li>
               <li><a href="<?= base_url('laporan'); ?>"><i class="fa fa-fw fa-bar-chart-o"></i> Laporan</a></li>
               <li><a href="<?= base_url('feed'); ?>"><i class="fa fa-rss"></i> Feed Back</a></li>

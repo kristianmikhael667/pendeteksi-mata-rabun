@@ -89,10 +89,15 @@
                                     $nu = 1;
                                     foreach ($gejala as $g) : ?>
                                         <div class="tab-pane fade" id="tabs-1-<?= $no++ ?>">
-                                            <h4><?= $nu++ ?>.) <?= $g["kode_gejala"] ?> ~ Apakah <?= $g["nama_gejala"] ?> ?</h4>
-                                            <input type="checkbox" id="<?= $g['id_gejala']; ?>" name="id_gejala[]" value="<?= $g['id_gejala']; ?>"> Ya
-                                            <input type="checkbox" id="<?= $g['id_gejala']; ?>" name="id_gejala[]" value=""> Tidak
 
+                                            <h4 class="mb-2"><?= $nu++ ?>.) <?= $g["kode_gejala"] ?> ~ Apakah <?= $g["nama_gejala"] ?> ?</h4>
+                                            <input type="checkbox" id="<?= $g['id_gejala']; ?>" name="id_gejala[]" value="<?= $g['id_gejala']; ?>"> Ya
+                                            <input type="checkbox" id="<?= $g['id_gejala']; ?>" class="ml-4" name="id_gejala[]" value=""> Tidak
+                                            <select name="id_gejala_cf[]" class="form-select ml-5" aria-label="Default select example" multiple>
+                                                <option>Pilih Jawaban Pasien</option>
+                                                <option value="<?= $g['id_gejala'] ?>">Yakin</option>
+                                                <option>Tidak Yakin</option>
+                                            </select>
                                         </div>
 
                                     <?php endforeach ?>

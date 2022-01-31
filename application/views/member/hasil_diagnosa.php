@@ -23,7 +23,7 @@
                 <div class="col-lg">
 
                     <div class="page three">
-                        <h2 class="heading">Hasil Diagnosa</h2>
+                        <h2 class="heading">Hasil Diagnosa Naive Bayes</h2>
                         <div class="row progress-circle mb-5">
                             <?php foreach ($diagnosa as $diag) : ?>
                                 <?php
@@ -59,7 +59,35 @@
                                 </div>
                             <?php endforeach; ?>
                         </div>
-
+                        <!-- <h2 class="heading">Hasil Diagnosa Certainly Factory</h2> -->
+                        <div class="box box-success">
+                            <div class="box-header with-border">
+                                <h6 class="box-title">Hasil Diagnosa Certainly Factory</h6>
+                            </div><!-- /.box-header -->
+                            <div class="box-body">
+                                <table id="tbl-list" class="table table-bordered">
+                                    <tr>
+                                        <th width="50px" style="background: #67CDFF; color: white">No</th>
+                                        <th style="background: #67CDFF; color: white">Penyakit</th>
+                                        <th style="background: #67CDFF; color: white">Tingkat Kepercayaan</th>
+                                    </tr>
+                                    <tr>
+                                        <?php $i = 1;
+                                        foreach (array_slice($listPenyakit, 0, 5) as $value) : ?>
+                                            <?php die(var_dump($value));
+                                            ?>
+                                    <tr>
+                                        <td width="30px"><?php echo $i++ ?></td>
+                                        <td><?php echo $value['kode'] . " - " . $value['nama'] ?></td>
+                                        <td><?php echo $value['kepercayaan'] ?> %</td>
+                                    </tr>
+                                <?php endforeach ?>
+                                </tr>
+                                </table>
+                            </div>
+                            <!--box body-->
+                        </div>
+                        <!--box-->
 
 
                         <div class="row">

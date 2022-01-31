@@ -51,5 +51,11 @@ class Gejala_model extends CI_model
     // Hapus gejala berdasarkan id yang dipilih.
     $this->db->delete('tbl_gejala', ['id_gejala' => $id]);
   }
+
+  function get_list_by_id($id)
+  {
+    $sql = "select id_gejala,kode_gejala,nama_gejala from tbl_gejala where id_gejala in (" . $id . ")";
+    return $this->db->query($sql);
+  }
   // End CRUD GEJALA
 }
