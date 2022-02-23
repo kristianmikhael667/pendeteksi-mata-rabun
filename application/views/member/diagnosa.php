@@ -23,7 +23,7 @@
                                 <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                                 <!--RD Navbar Brand-->
                                 <div class="rd-navbar-brand">
-                                    <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="../assets/images/logo-default-294x44. png" alt="" width="147" height="22" /><img class="brand-logo-light" src="../assets/images/logo-inverse-294x44.png" alt="" width="147" height="22" /></a>
+                                    <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="../assets/images/logo-default-294x44. png" alt="" width="147" height="22" /><img class="brand-logo-light" src="../assets/images/logo.jpeg" alt="" width="147" height="22" /></a>
                                 </div>
                             </div>
                             <div class="rd-navbar-main-element">
@@ -49,7 +49,7 @@
             </div>
         </header>
         <!-- Breadcrumbs-->
-        <section class="breadcrumbs-custom bg-image context-dark custom-mode-1" style="background-image: url(../assets/images/breadcrumbs-1.png)" data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
+        <section class="breadcrumbs-custom bg-image context-dark custom-mode-1" style="background-image: url(../assets/images/dimensi.jpeg);object-fit: cover;" data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
             <div class="container">
                 <div class="row flex-column-reverse">
                     <div class="col-12">
@@ -117,7 +117,7 @@
                 <div class="container">
                     <div class="row row-30">
                         <div class="col-xl-12 order-1 wow fadeInLeft">
-                            <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="../assets/images/logo-default-294x44.png" alt="" width="147" height="22" /><img class="brand-logo-light" src="../assets/images/logo-inverse-294x44.png" alt="" width="147" height="22" /></a>
+                            <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="../assets/images/logo-default-294x44.png" alt="" width="147" height="22" /><img class="brand-logo-light" src="../assets/images/logo.jpeg" alt="" width="147" height="22" /></a>
                             <p class="text-style-1">Sistem Pakar Pendeteksi Mata Rabun merupakan Teknologi kecerdasan buatan dalam bidang kesehatan yang memacu untuk pengembangan aplikasi sistem pakar untuk layanan kesehatan, salah satunya adalah proses diagnosa
                                 penyakit. Sistem pakar merupakan bidang studi pada Kecerdasan Buatan yang sudah ada dalam beberapa decade..</p>
                         </div>

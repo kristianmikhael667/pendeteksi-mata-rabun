@@ -40,7 +40,7 @@
                           <td style="text-align: center"><?= date('d F Y', $l['waktu']); ?></td>
                           <td><?= $l['nama_user']; ?></td>
                           <td><?= $l['nama_kerusakan']; ?></td>
-                          <td><?= $l['hasil_probabilitas']; ?></td>
+                          <td><?= $l['hasil_probabilitas'] . '%' ?> </td>
 
                         </tr>
                         <?php $i++; ?>

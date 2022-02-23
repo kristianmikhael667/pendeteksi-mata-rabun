@@ -144,7 +144,6 @@ class Diagnosa extends CI_Controller
 
     // Certainty factory
     $data['listPenyakit'] = $penyakit;
-    die(var_dump($penyakit[0]));
 
     $user = $this->db->get_where('tbl_user', [
       'username' => $this->session->userdata('username')

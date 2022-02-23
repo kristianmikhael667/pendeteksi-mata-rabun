@@ -1,7 +1,7 @@
 <footer class="footer">
   <div class="container">
     <div class="copyright">
-      &copy; 2021 Sistem Pakar Diagnosa Kerusakan Komputer By Framework id
+      &copy; 2022 @DimensiCare
     </div>
   </div>
 </footer>

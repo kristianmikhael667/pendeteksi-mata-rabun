@@ -53,7 +53,7 @@
                                 <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                                 <!--RD Navbar Brand-->
                                 <div class="rd-navbar-brand">
-                                    <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo-default-294x44.png" alt="" width="147" height="22" /><img class="brand-logo-light" src="images/logo-inverse-294x44.png" alt="" width="147" height="22" /></a>
+                                    <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo-default-294x44s.png" alt="" width="147" height="22" /><img class="brand-logo-light" src="images/logo-inverse-294x44.png" alt="" width="147" height="22" /></a>
                                 </div>
                             </div>
                             <div class="rd-navbar-main-element">
@@ -87,8 +87,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
-                        <div class="intro-box wow fadeInLeft" data-wow-dalay=".2s"><span class="subtitle">Selamat Datang di Apps Pendeteksi Mata Rabun</span>
-                            <h1>Pendeteksi mata rabun berbasis web dan mobile</h1>
+                        <div class="intro-box wow fadeInLeft" data-wow-dalay=".2s"><span class="subtitle">Selamat Datang di Aplikasi Kami</span>
+                            <h1>@DimensiCare</h1>
                             <div class="button-group"><a class="button-primary button button-md" href="<?= base_url('auth'); ?>">Konsultasi Sekarang</a>
                             </div>
                         </div>
@@ -164,7 +164,7 @@
                         </div>
                     </div>
                     <div class="col-xl-6 d-none d-xl-block wow fadeInUp" data-wow-dalay=".2s">
-                        <div class="box-about-creative__media"><img src="assets/images/home-img-1-682x625.png" alt="" width="682" height="625" />
+                        <div class="box-about-creative__media"><img src="assets/images/ban1.jpeg" alt="" width="682" height="500" />
                         </div>
                     </div>
                 </div>
@@ -216,119 +216,67 @@
         <!--Team Slider-->
         <section class="section section-lg">
             <div class="container text-center text-sm-left">
-                <div class="pre-title wow fadeInLeft">Our Doctors</div>
-                <h2 class="wow fadeInLeft" data-wow-dalay=".2s">We have the best <span class="text-primary">specialists</span><br class="d-none d-lg-block">in the area</h2>
-                <div class="owl-carousel owl-theme owl-style-1" data-items="1" data-sm-items="2" data-md-items="3" data-lg-items="3" data-margin="30px" data-nav="true" data-dots="true" data-autoplay="3000">
+                <div class="pre-title wow fadeInLeft">Kami Memiliki</div>
+                <h2 class="wow fadeInLeft" data-wow-dalay=".2s">Spesialis <span class="text-primary">Terbaik</span><br class="d-none d-lg-block">Di Daerah</h2>
+                <div class="owl-carousel owl-theme owl-style-1" data-items="1" data-sm-items="2" data-md-items="1" data-lg-items="1" data-margin="30px" data-nav="true" data-dots="true" data-autoplay="3000">
+
                     <div class="team-member-profile">
-                        <div class="team-member-profile__media"><img src="assets/images/team-1-370x460.jpg" alt="" width="370" height="460" />
+                        <div class="team-member-profile__media"><img src="assets/images/dokter.jpeg" alt="" width="370" height="460" />
                         </div>
                         <div class="team-member-profile__caption">
-                            <h5><a href="single-doctor.html">Dr. Rais A Raqib, Sp.M</a></h5><span>Pediatrician</span>
-                        </div>
-                    </div>
-                    <div class="team-member-profile">
-                        <div class="team-member-profile__media"><img src="assets/images/team-2-370x460.jpg" alt="" width="370" height="460" />
-                        </div>
-                        <div class="team-member-profile__caption">
-                            <h5><a href="single-doctor.html">Dr. Faika Novadianas Sp.M</a></h5><span>Dentist</span>
-                        </div>
-                    </div>
-                    <div class="team-member-profile">
-                        <div class="team-member-profile__media"><img src="assets/images/team-3-370x460.jpg" alt="" width="370" height="460" />
-                        </div>
-                        <div class="team-member-profile__caption">
-                            <h5><a href="single-doctor.html">Dr. Todd Moore</a></h5><span>Traumatologist</span>
-                        </div>
-                    </div>
-                    <div class="team-member-profile">
-                        <div class="team-member-profile__media"><img src="assets/images/team-4-370x460.jpg" alt="" width="370" height="460" />
-                        </div>
-                        <div class="team-member-profile__caption">
-                            <h5><a href="single-doctor.html">Dr. Jason Ramirez</a></h5><span>Surgeon</span>
-                        </div>
-                    </div>
-                    <div class="team-member-profile">
-                        <div class="team-member-profile__media"><img src="assets/images/team-1-370x460.jpg" alt="" width="370" height="460" />
-                        </div>
-                        <div class="team-member-profile__caption">
-                            <h5><a href="single-doctor.html">Dr. Mike Rolson</a></h5><span>Pediatrician</span>
-                        </div>
-                    </div>
-                    <div class="team-member-profile">
-                        <div class="team-member-profile__media"><img src="assets/images/team-2-370x460.jpg" alt="" width="370" height="460" />
-                        </div>
-                        <div class="team-member-profile__caption">
-                            <h5><a href="single-doctor.html">Dr. Virginia Howard</a></h5><span>Dentist</span>
-                        </div>
-                    </div>
-                    <div class="team-member-profile">
-                        <div class="team-member-profile__media"><img src="assets/images/team-3-370x460.jpg" alt="" width="370" height="460" />
-                        </div>
-                        <div class="team-member-profile__caption">
-                            <h5><a href="single-doctor.html">Dr. Todd Moore</a></h5><span>Traumatologist</span>
-                        </div>
-                    </div>
-                    <div class="team-member-profile">
-                        <div class="team-member-profile__media"><img src="assets/images/team-4-370x460.jpg" alt="" width="370" height="460" />
-                        </div>
-                        <div class="team-member-profile__caption">
-                            <h5><a href="single-doctor.html">Dr. Jason Ramirez</a></h5><span>Surgeon</span>
+                            <h5><a href="single-doctor.html">Dr. Dechrist Yohanes Eddy Wibowo Sp.M</a></h5><span>Dokter Mata</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!--Counters-->
-        <section class="section bg-image-3 section-lg">
+        <!-- <section class="section bg-image-3 section-lg">
             <div class="container">
                 <h2 class="text-center">Kasus Covid-19 Indonesia</h2>
 
                 <div class="row row-30 justify-content-center text-center text-sm-left">
-                    <?php
 
-                    foreach ($corona as $con) : ?>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-dalay=".1s">
+                      
+                        <div class="box-counter">
+                            <div class="box-counter-main">
+                                <div class="counter">0</div>
+                            </div>
+                            <div class="box-counter-title">Positif</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-dalay=".2s">
+                      
+                        <div class="box-counter">
+                            <div class="box-counter-main">
+                                <div class="counter">0</div>
+                            </div>
+                            <div class="box-counter-title">Sembuh</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-dalay=".3s">
+                   
+                        <div class="box-counter">
+                            <div class="box-counter-main">
+                                <div class="counter">0</div>
+                            </div>
+                            <div class="box-counter-title">Meninggal</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-dalay=".4s">
+                   
+                        <div class="box-counter">
+                            <div class="box-counter-main">
+                                <div class="counter">0</div>
+                            </div>
+                            <div class="box-counter-title">Dirawat</div>
+                        </div>
+                    </div>
 
-
-                        <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-dalay=".1s">
-                            <!--Counter-->
-                            <div class="box-counter">
-                                <div class="box-counter-main">
-                                    <div class="counter"><?php echo $con['positif']; ?></div>
-                                </div>
-                                <div class="box-counter-title">Positif</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-dalay=".2s">
-                            <!--Counter-->
-                            <div class="box-counter">
-                                <div class="box-counter-main">
-                                    <div class="counter"><?php echo $con['sembuh']; ?></div>
-                                </div>
-                                <div class="box-counter-title">Sembuh</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-dalay=".3s">
-                            <!--Counter-->
-                            <div class="box-counter">
-                                <div class="box-counter-main">
-                                    <div class="counter"><?php echo $con['meninggal']; ?></div>
-                                </div>
-                                <div class="box-counter-title">Meninggal</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-dalay=".4s">
-                            <!--Counter-->
-                            <div class="box-counter">
-                                <div class="box-counter-main">
-                                    <div class="counter"><?php echo $con['dirawat']; ?></div>
-                                </div>
-                                <div class="box-counter-title">Dirawat</div>
-                            </div>
-                        </div>
-                    <?php endforeach ?>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!--News-->
         <!-- <section class="section section-lg">
             <div class="container">

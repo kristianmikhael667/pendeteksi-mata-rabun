@@ -11,7 +11,7 @@ class Member extends CI_Controller
   }
   public function index()
   {
-    $data['judul'] = "Halaman Member";
+    $data['judul'] = "Halaman Member @DimensiCare";
     $data['user'] = $this->db->get_where('tbl_user', [
       'username' => $this->session->userdata('username')
     ])->row_array();

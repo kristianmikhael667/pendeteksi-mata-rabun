@@ -24,13 +24,13 @@ class Home extends CI_Controller
 
     // curl_close($curl);
 
-    $readAPI = file_get_contents('https://api.kawalcorona.com/indonesia');
-    $response = json_decode($readAPI, true);
+    // $readAPI = file_get_contents('https://api.kawalcorona.com/indonesia');
+    // $response = json_decode($readAPI, true);
     // var_dump($response);
     // die;
 
-    $data['corona'] = $response;
-    $data['judul'] = "Pendeteksi Mata Rabun";
+    // $data['corona'] = $response;
+    $data['judul'] = "@DimensiCare";
     $this->load->view('templates_home/head', $data);
     $this->load->view('home/index');
 

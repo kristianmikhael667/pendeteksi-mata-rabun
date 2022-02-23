@@ -7,7 +7,7 @@
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     Copyright &copy;<script>
                         document.write(new Date().getFullYear());
-                    </script> Sistem Pakar Diagnosa Kerusakan Komputer By Framework Id
+                    </script> 2022 @DimensiCare
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </p>
             </div>

@@ -2,7 +2,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
         <div class="container">
-            <img class="brand-logo-light" src="../assets/images/logo-inverse-294x44.png" alt="" width="147" height="22" />
+            <img class="brand-logo-light" src="../assets/images/logo.jpeg" alt="" width="147" height="100" />
             <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
             </button>
@@ -67,19 +67,27 @@
                             <div class="box-body">
                                 <table id="tbl-list" class="table table-bordered">
                                     <tr>
-                                        <th width="50px" style="background: #67CDFF; color: white">No</th>
                                         <th style="background: #67CDFF; color: white">Penyakit</th>
                                         <th style="background: #67CDFF; color: white">Tingkat Kepercayaan</th>
                                     </tr>
                                     <tr>
-                                        <?php $i = 1;
-                                        foreach (array_slice($listPenyakit, 0, 5) as $value) : ?>
-                                            <?php die(var_dump($value));
-                                            ?>
+                                        <?php foreach ($diagnosa as $diag) : ?>
+
                                     <tr>
-                                        <td width="30px"><?php echo $i++ ?></td>
-                                        <td><?php echo $value['kode'] . " - " . $value['nama'] ?></td>
-                                        <td><?php echo $value['kepercayaan'] ?> %</td>
+                                        <td><?php
+                                            if ($diag['id_penyakit'] == 39) {
+                                                echo $diag['id_penyakit'] = 'Mata Myopia';
+                                            } else if ($diag['id_penyakit'] == 40) {
+                                                echo $diag['id_penyakit'] = 'Mata Hipermetropi';
+                                            } else if ($diag['id_penyakit'] == 41) {
+                                                echo $diag['id_penyakit'] = 'Mata Astigmatisma';
+                                            } else if ($diag['id_penyakit'] == 42) {
+                                                echo  $diag['id_penyakit'] = 'Mata Presbiopi';
+                                            } else if ($diag['id_penyakit'] == 43) {
+                                                echo $diag['id_penyakit'] = 'Mata Katarak';
+                                            }
+                                            ?></td>
+                                        <td><?= $diag['hasil_probabilitas'] * 100 - 2; ?> %</td>
                                     </tr>
                                 <?php endforeach ?>
                                 </tr>
@@ -131,49 +139,62 @@
                                 </div>
                             </div>
                             <div class="row d-flex center">
-                                <div class="col-md-12 d-flex ftco-animate">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h4>Hasil Tingkat Kepuasan Anda</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <input class="form-control" id="rangeInput" type="range" min="0" max="100" oninput="amount.value=rangeInput.value" />
-                                            <input class="form-control" id="amount" type="number" value="0" min="0" max="100" oninput="rangeInput.value=amount.value" />
-                                        </div>
-                                        <div class="card-footer">
-                                            <button type="button" onclick="storefeed()" class="btn btn-primary">Send Feedback </button>
+                                <div class="col-md-8 d-flex ftco-animate">
+                                    <div class="blog-entry justify-content-end">
+
+                                        <div class="text mt-3 float-right d-block">
+                                            <h4>Dokter Konsultasi</h4>
+                                            <div class="team-member-profile__media"><img src="../assets/images/dokter.jpeg" alt="" width="370" height="460" />
+
+                                                <p>Dr. Dechrist Yohanes Eddy Wibowo Sp.M</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="row d-flex center">
+                                    <div class="col-md-12 d-flex ftco-animate">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h4>Hasil Tingkat Kepuasan Anda</h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <input class="form-control" id="rangeInput" type="range" min="0" max="100" oninput="amount.value=rangeInput.value" />
+                                                <input class="form-control" id="amount" type="number" value="0" min="0" max="100" oninput="rangeInput.value=amount.value" />
+                                            </div>
+                                            <div class="card-footer">
+                                                <button type="button" onclick="storefeed()" class="btn btn-primary">Send Feedback </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
+                            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+                            <script>
+                                storefeed = () => {
+                                    let fd = new FormData();
+                                    let nama = $("#amount").val();
+
+                                    fd.append('amount', nama);
+                                    console.log(nama);
+                                    const baseUrl = '<?= base_url(); ?>';
+                                    $.ajax({
+                                        type: "POST",
+                                        url: `${baseUrl}/diagnosa/hasilkepuasan`,
+                                        cache: false,
+                                        contentType: false,
+                                        processData: false,
+                                        data: fd,
+                                        success: function(data) {
+
+                                            swal("Thanks", "Success Send FeedBack From Users", "success");
+                                            // location.href = `${baseUrl}/admin/users/list`;
+                                        }
+                                    })
+                                }
+                            </script>
                             </div>
-                        <?php endforeach; ?>
-                        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
-                        <script>
-                            storefeed = () => {
-                                let fd = new FormData();
-                                let nama = $("#amount").val();
-
-                                fd.append('amount', nama);
-                                console.log(nama);
-                                const baseUrl = '<?= base_url(); ?>';
-                                $.ajax({
-                                    type: "POST",
-                                    url: `${baseUrl}/diagnosa/hasilkepuasan`,
-                                    cache: false,
-                                    contentType: false,
-                                    processData: false,
-                                    data: fd,
-                                    success: function(data) {
-
-                                        swal("Thanks", "Success Send FeedBack From Users", "success");
-                                        // location.href = `${baseUrl}/admin/users/list`;
-                                    }
-                                })
-                            }
-                        </script>
                     </div>
                 </div>
             </div>
-        </div>
     </section>

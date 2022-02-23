@@ -1,7 +1,7 @@
 <!-- footer content -->
 <footer>
   <div class="pull-right">
-    <h6><i class="fa fa-desktop"></i> Pendeteksi Rabun Mata</h6>
+    <h6><i class="fa fa-desktop"></i> @DimensiCare</h6>
     <p>© 2021- Sistem Pakar Diagnosa Penyakit Rabun Mata</p>
   </div>
   <div class="clearfix"></div>
